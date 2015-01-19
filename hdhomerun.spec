@@ -1,23 +1,20 @@
 # TODO
 # - fix icons
-%define	releasedate 20140604
-%define	rel	0.1
 Summary:	Silicon Dust HDHomeRun configuration utility
 Name:		hdhomerun
-Version:	0.0
-Release:	0.%{releasedate}.%{rel}
+Version:	20141210
+Release:	1
 License:	LGPL v3 and GPL v3
 Group:		Applications/System
-Source0:	http://download.silicondust.com/hdhomerun/lib%{name}_%{releasedate}.tgz
-# Source0-md5:	13d4b0f5f20448179a5c05ee85b83786
-Source1:	http://download.silicondust.com/hdhomerun/%{name}_config_gui_%{releasedate}.tgz
-# Source1-md5:	317c833cab1a2c50bdb651ed3149ee2d
+Source0:	http://download.silicondust.com/hdhomerun/lib%{name}_%{version}.tgz
+# Source0-md5:	c3bf11ecfa3b1ceeedc54ec67e7f25b4
+Source1:	http://download.silicondust.com/hdhomerun/%{name}_config_gui_%{version}.tgz
+# Source1-md5:	b4bf62b088fb58c5b0e85ed7e30294a2
 Source2:	%{name}_config_gui.desktop
 URL:		http://www.silicondust.com/
 BuildRequires:	desktop-file-utils
 BuildRequires:	gtk+2-devel
 BuildRequires:	libicns
-Requires:	gtk+2
 Requires:	gtk-update-icon-cache
 Requires:	hicolor-icon-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
